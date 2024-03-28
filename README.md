@@ -35,15 +35,14 @@ _PollManager_ component should:
 
 The following _data-testid_ attributes are required in the components for the tests to pass:
 
-| **Attribute**         | **Component**             |
-|-----------------------|---------------------------|
-| poll-manager          | PollManager container     |
-| option-1              | Vote option 1 container   |
-| option-2              | Vote option 1 container   |
-| choice-1              | Choice 1 text             |
-| choice-2              | Choice 2 text             |
-| winner-button         | View Winner button        |
-
+| **Attribute** | **Component**           |
+| ------------- | ----------------------- |
+| poll-manager  | PollManager container   |
+| option-1      | Vote option 1 container |
+| option-2      | Vote option 1 container |
+| choice-1      | Choice 1 text           |
+| choice-2      | Choice 2 text           |
+| winner-button | View Winner button      |
 
 Note:
 
@@ -57,21 +56,28 @@ Note:
 - Default Port: 8000
 
 **Read Only Files**
+
 - `src/App.test.tsx`
 - `src/data/Poll.ts`
 
-
 **Commands**
-- run: 
+
+- run:
+
 ```bash
 npm start
 ```
-- install: 
+
+- install:
+
 ```bash
 npm install
 ```
-- test: 
+
+- test:
+
 ```bash
 npm test
 ```
 
+## Updated
