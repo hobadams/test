@@ -19,7 +19,7 @@ const PollManager: React.FC = () => {
   return (
     <div className="layout-column align-items-center justify-content-start poll-manager" data-testid="poll-manager">
       <h2>{pollData.question}</h2>
-      <Vote options={pollData.options} onVote={vote} viewWinner={false} />
+      <Vote options={pollData.options} onVote={vote} viewWinner={showWinner} />
       <Results poll={pollData} viewWinner={showWinner} setViewWinner={setShowWinner} totalVotes={0} />
     </div>
   );

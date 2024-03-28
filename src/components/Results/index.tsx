@@ -10,9 +10,10 @@ interface ResultsProps {
 
 const Results: React.FC<ResultsProps> = ({ poll, viewWinner, setViewWinner, totalVotes }) => {
   const hasVotes = poll.options.some((option) => option.votes > 0);
+  const text = getResultsText(poll, viewWinner)
   return (
     <>
-      <p data-testid="result">{getResultsText(poll, viewWinner)}</p>
+      <p data-testid="result">{text && text}</p>
       <section className="layout-row align-items-center justify-content-center mr-10 ml-10 pr-10 pl-10">
         <button data-testid="winner-button" onClick={() => setViewWinner(!viewWinner)} disabled={!hasVotes || viewWinner}>
           View Winner
@@ -22,21 +23,21 @@ const Results: React.FC<ResultsProps> = ({ poll, viewWinner, setViewWinner, tota
   );
 };
 
-const getResultsText = (poll: Poll, viewWinner: boolean): string => {
+const getResultsText = (poll: Poll, viewWinner: boolean): string | null => {
 
   const hasVotes = poll.options.some((option) => option.votes > 0);
 
-  if (!hasVotes) return 'No votes yet!';
+  if (!hasVotes) return null;
 
   const voteDifference = getMostVotedWithDifference(poll.options);
 
-  if (voteDifference === null) return 'Its a tie!';
+  if (voteDifference === null) return 'It\'s a tie';
 
   if (viewWinner) {
     return `${poll.options.find((option) => option.id === voteDifference.id)?.text} won by ${voteDifference.difference} vote(s)`;
   }
 
-  return `${poll.options.find((option) => option.id === voteDifference.id)?.text} is winning with a difference of ${voteDifference.difference} vote(s)`;
+  return `${poll.options.find((option) => option.id === voteDifference.id)?.text} is leading by ${voteDifference.difference} vote(s)`;
 
 }
 
