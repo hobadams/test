@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="9" failures="6" errors="0" time="0.645">
+  <testsuite name="typescript-poll-manager" errors="0" failures="6" skipped="0" timestamp="2024-03-28T20:41:19" time="0.431" tests="9">
+    <testcase classname="typescript-poll-manager renders the app with initial state" name="typescript-poll-manager renders the app with initial state" time="0.018">
+    </testcase>
+    <testcase classname="typescript-poll-manager renders correct choice 1" name="typescript-poll-manager renders correct choice 1" time="0.005">
+      <failure>TestingLibraryElementError: Unable to find an element by: [data-testid=&quot;choice-1&quot;]
+
+Ignored nodes: comments, script, style
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;App&quot;
+    &gt;
+      &lt;h8k-navbar
+        data-testid=&quot;navbar&quot;
+        header=&quot;Pole Manager&quot;
+      /&gt;
+      &lt;div
+        class=&quot;layout-column align-items-center justify-content-start poll-manager&quot;
+        data-testid=&quot;poll-manager&quot;
+      &gt;
+        &lt;h2&gt;
+          Who is your favorite superhero?
+        &lt;/h2&gt;
+        &lt;div
+          class=&quot;vote-container w-40 h-50&quot;
+        &gt;
+          &lt;div
+            class=&quot;card mr-10 ml-10 w-100&quot;
+            data-testid=&quot;option-1&quot;
+          &gt;
+            &lt;section
+              class=&quot;layout-row align-items-center justify-content-center mr-10 ml-10 pr-10 pl-10&quot;
+            &gt;
+              &lt;h3
+                data-testid=&quot;choice-1}&quot;
+              &gt;
+                Superman
+              &lt;/h3&gt;
+            &lt;/section&gt;
+            &lt;section
+              class=&quot;layout-row align-items-center justify-content-center mr-10 ml-10 mb-10 pr-10 pl-10&quot;
+            &gt;
+              &lt;button
+                data-testid=&quot;vote-button-1&quot;
+              &gt;
+                Vote
+              &lt;/button&gt;
+            &lt;/section&gt;
+          &lt;/div&gt;
+          &lt;div
+            class=&quot;card mr-10 ml-10 w-100&quot;
+            data-testid=&quot;option-2&quot;
+          &gt;
+            &lt;section
+              class=&quot;layout-row align-items-center justify-content-center mr-10 ml-10 pr-10 pl-10&quot;
+            &gt;
+              &lt;h3
+                data-testid=&quot;choice-2}&quot;
+              &gt;
+                Batman
+              &lt;/h3&gt;
+            &lt;/section&gt;
+            &lt;section
+              class=&quot;layout-row align-items-center justify-content-center mr-10 ml-10 mb-10 pr-10 pl-10&quot;
+            &gt;
+              &lt;button
+                data-testid=&quot;vote-button-2&quot;
+              &gt;
+                Vote
+              &lt;/button&gt;
+            &lt;/section&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;p
+          data-testid=&quot;result&quot;
+        /&gt;
+        &lt;section
+          class=&quot;layout-row align-items-center justify-content-center mr-10 ml-10 pr-10 pl-10&quot;
+        &gt;
+          &lt;button
+            data-testid=&quot;winner-button&quot;
+            disabled=&quot;&quot;
+          &gt;
+            View Winner
+          &lt;/button&gt;
+        &lt;/section&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/Users/hobadams/Work/moralis/node_modules/@testing-library/dom/dist/config.js:37:19)
+    at /Users/hobadams/Work/moralis/node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+    at /Users/hobadams/Work/moralis/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+    at /Users/hobadams/Work/moralis/node_modules/@testing-library/dom/dist/query-helpers.js:95:19
+    at Object.getByTestId (/Users/hobadams/Work/moralis/src/App.test.tsx:16:28)
+    at Promise.then.completed (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-circus/build/run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-circus/build/run.js:60:9)
+    at run (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:475:34)
+    at TestRunner.runTests (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-runner/build/index.js:101:12)
+    at TestScheduler.scheduleTests (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/@jest/core/build/TestScheduler.js:333:13)
+    at runJest (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/@jest/core/build/runJest.js:404:19)
+    at _run10000 (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/@jest/core/build/cli/index.js:320:7)
+    at runCLI (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/@jest/core/build/cli/index.js:173:3)
+    at Object.run (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
+    </testcase>
+    <testcase classname="typescript-poll-manager renders correct choice 2" name="typescript-poll-manager renders correct choice 2" time="0.003">
+      <failure>TestingLibraryElementError: Unable to find an element by: [data-testid=&quot;choice-2&quot;]
+
+Ignored nodes: comments, script, style
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;App&quot;
+    &gt;
+      &lt;h8k-navbar
+        data-testid=&quot;navbar&quot;
+        header=&quot;Pole Manager&quot;
+      /&gt;
+      &lt;div
+        class=&quot;layout-column align-items-center justify-content-start poll-manager&quot;
+        data-testid=&quot;poll-manager&quot;
+      &gt;
+        &lt;h2&gt;
+          Who is your favorite superhero?
+        &lt;/h2&gt;
+        &lt;div
+          class=&quot;vote-container w-40 h-50&quot;
+        &gt;
+          &lt;div
+            class=&quot;card mr-10 ml-10 w-100&quot;
+            data-testid=&quot;option-1&quot;
+          &gt;
+            &lt;section
+              class=&quot;layout-row align-items-center justify-content-center mr-10 ml-10 pr-10 pl-10&quot;
+            &gt;
+              &lt;h3
+                data-testid=&quot;choice-1}&quot;
+              &gt;
+                Superman
+              &lt;/h3&gt;
+            &lt;/section&gt;
+            &lt;section
+              class=&quot;layout-row align-items-center justify-content-center mr-10 ml-10 mb-10 pr-10 pl-10&quot;
+            &gt;
+              &lt;button
+                data-testid=&quot;vote-button-1&quot;
+              &gt;
+                Vote
+              &lt;/button&gt;
+            &lt;/section&gt;
+          &lt;/div&gt;
+          &lt;div
+            class=&quot;card mr-10 ml-10 w-100&quot;
+            data-testid=&quot;option-2&quot;
+          &gt;
+            &lt;section
+              class=&quot;layout-row align-items-center justify-content-center mr-10 ml-10 pr-10 pl-10&quot;
+            &gt;
+              &lt;h3
+                data-testid=&quot;choice-2}&quot;
+              &gt;
+                Batman
+              &lt;/h3&gt;
+            &lt;/section&gt;
+            &lt;section
+              class=&quot;layout-row align-items-center justify-content-center mr-10 ml-10 mb-10 pr-10 pl-10&quot;
+            &gt;
+              &lt;button
+                data-testid=&quot;vote-button-2&quot;
+              &gt;
+                Vote
+              &lt;/button&gt;
+            &lt;/section&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;p
+          data-testid=&quot;result&quot;
+        /&gt;
+        &lt;section
+          class=&quot;layout-row align-items-center justify-content-center mr-10 ml-10 pr-10 pl-10&quot;
+        &gt;
+          &lt;button
+            data-testid=&quot;winner-button&quot;
+            disabled=&quot;&quot;
+          &gt;
+            View Winner
+          &lt;/button&gt;
+        &lt;/section&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/Users/hobadams/Work/moralis/node_modules/@testing-library/dom/dist/config.js:37:19)
+    at /Users/hobadams/Work/moralis/node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+    at /Users/hobadams/Work/moralis/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+    at /Users/hobadams/Work/moralis/node_modules/@testing-library/dom/dist/query-helpers.js:95:19
+    at Object.getByTestId (/Users/hobadams/Work/moralis/src/App.test.tsx:22:28)
+    at Promise.then.completed (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-circus/build/run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-circus/build/run.js:60:9)
+    at run (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:475:34)
+    at TestRunner.runTests (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-runner/build/index.js:101:12)
+    at TestScheduler.scheduleTests (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/@jest/core/build/TestScheduler.js:333:13)
+    at runJest (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/@jest/core/build/runJest.js:404:19)
+    at _run10000 (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/@jest/core/build/cli/index.js:320:7)
+    at runCLI (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/@jest/core/build/cli/index.js:173:3)
+    at Object.run (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
+    </testcase>
+    <testcase classname="typescript-poll-manager shows correct vote count after voting" name="typescript-poll-manager shows correct vote count after voting" time="0.006">
+    </testcase>
+    <testcase classname="typescript-poll-manager shows &quot;It&apos;s a tie&quot; when both options have equal votes" name="typescript-poll-manager shows &quot;It&apos;s a tie&quot; when both options have equal votes" time="0.006">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: &quot;It&apos;s a tie&quot;
+Received: &quot;Superman is leading by 1 vote(s)&quot;
+    at Object.toEqual (/Users/hobadams/Work/moralis/src/App.test.tsx:47:36)
+    at Promise.then.completed (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-circus/build/run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-circus/build/run.js:60:9)
+    at run (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:475:34)
+    at TestRunner.runTests (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-runner/build/index.js:101:12)
+    at TestScheduler.scheduleTests (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/@jest/core/build/TestScheduler.js:333:13)
+    at runJest (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/@jest/core/build/runJest.js:404:19)
+    at _run10000 (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/@jest/core/build/cli/index.js:320:7)
+    at runCLI (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/@jest/core/build/cli/index.js:173:3)
+    at Object.run (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
+    </testcase>
+    <testcase classname="typescript-poll-manager &quot;View Winner&quot; button is disabled when no votes have been cast" name="typescript-poll-manager &quot;View Winner&quot; button is disabled when no votes have been cast" time="0.002">
+      <failure>Error: expect(element).toBeDisabled()
+
+Received element is not disabled:
+  &lt;button data-testid=&quot;winner-button&quot; /&gt;
+    at Object.toBeDisabled (/Users/hobadams/Work/moralis/src/App.test.tsx:52:30)
+    at Promise.then.completed (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-circus/build/run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-circus/build/run.js:60:9)
+    at run (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:475:34)
+    at TestRunner.runTests (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-runner/build/index.js:101:12)
+    at TestScheduler.scheduleTests (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/@jest/core/build/TestScheduler.js:333:13)
+    at runJest (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/@jest/core/build/runJest.js:404:19)
+    at _run10000 (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/@jest/core/build/cli/index.js:320:7)
+    at runCLI (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/@jest/core/build/cli/index.js:173:3)
+    at Object.run (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
+    </testcase>
+    <testcase classname="typescript-poll-manager &quot;View Winner&quot; button is disabled when winner is declared" name="typescript-poll-manager &quot;View Winner&quot; button is disabled when winner is declared" time="0.002">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: &quot;Superman is leading by 1 vote(s)&quot;
+Received: &quot;Superman is leading by 2 vote(s)&quot;
+    at Object.toEqual (/Users/hobadams/Work/moralis/src/App.test.tsx:61:36)
+    at Promise.then.completed (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-circus/build/run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-circus/build/run.js:60:9)
+    at run (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:475:34)
+    at TestRunner.runTests (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-runner/build/index.js:101:12)
+    at TestScheduler.scheduleTests (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/@jest/core/build/TestScheduler.js:333:13)
+    at runJest (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/@jest/core/build/runJest.js:404:19)
+    at _run10000 (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/@jest/core/build/cli/index.js:320:7)
+    at runCLI (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/@jest/core/build/cli/index.js:173:3)
+    at Object.run (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
+    </testcase>
+    <testcase classname="typescript-poll-manager vote buttons are disabled when winner is declared" name="typescript-poll-manager vote buttons are disabled when winner is declared" time="0.003">
+    </testcase>
+    <testcase classname="typescript-poll-manager shows the winner when &quot;View Winner&quot; is clicked" name="typescript-poll-manager shows the winner when &quot;View Winner&quot; is clicked" time="0.004">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: &quot;Superman won by 2 vote(s)&quot;
+Received: &quot;Superman won by 5 vote(s)&quot;
+    at Object.toEqual (/Users/hobadams/Work/moralis/src/App.test.tsx:96:36)
+    at Promise.then.completed (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-circus/build/run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-circus/build/run.js:60:9)
+    at run (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:475:34)
+    at TestRunner.runTests (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-runner/build/index.js:101:12)
+    at TestScheduler.scheduleTests (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/@jest/core/build/TestScheduler.js:333:13)
+    at runJest (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/@jest/core/build/runJest.js:404:19)
+    at _run10000 (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/@jest/core/build/cli/index.js:320:7)
+    at runCLI (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/@jest/core/build/cli/index.js:173:3)
+    at Object.run (/Users/hobadams/Work/moralis/node_modules/react-scripts/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
+    </testcase>
+  </testsuite>
+</testsuites>

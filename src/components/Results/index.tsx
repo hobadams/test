@@ -30,11 +30,12 @@ const getResultsText = (poll: Poll, viewWinner: boolean): string | null => {
   if (!hasVotes) return null;
 
   const voteDifference = getMostVotedWithDifference(poll.options);
+  const winner = poll.options.find((option) => option.votes === Math.max(...poll.options.map((option) => option.votes)));
 
   if (voteDifference === null) return 'It\'s a tie';
 
   if (viewWinner) {
-    return `${poll.options.find((option) => option.id === voteDifference.id)?.text} won by ${voteDifference.difference} vote(s)`;
+    return `${winner?.text} won by ${voteDifference?.difference} vote(s)`;
   }
 
   return `${poll.options.find((option) => option.id === voteDifference.id)?.text} is leading by ${voteDifference.difference} vote(s)`;
