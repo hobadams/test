@@ -25,9 +25,9 @@ interface VoteButtonProps {
 }
 
 const VoteButton = ({ text, id, onClick, disabled = false }: VoteButtonProps) => (
-  <div key={id} data-testid={`option-${id}`} className="card mr-10 ml-10 w-100">
+  <div data-testid={`option-${id}`} className="card mr-10 ml-10 w-100">
     <section className="layout-row align-items-center justify-content-center mr-10 ml-10 pr-10 pl-10">
-      <h3 data-testid={`choice-${id}}`}>{text}</h3>
+      <h3 data-testid={`choice-${id}`}>{text}</h3>
     </section>
     <section className="layout-row align-items-center justify-content-center mr-10 ml-10 mb-10 pr-10 pl-10">
       <button onClick={onClick} disabled={disabled} data-testid={`vote-button-${id}`}>
